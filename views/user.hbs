@@ -1,0 +1,37 @@
+<h1> ______________________________________________________________________________________________________________________ </h1>
+<h1 class="title" style="position: relative; top:25px; height:35px; width: 250px; margin-left: 785px;"> Welcome Back </h1><br>
+<h3 class="title" style="position: relative; top:25px; height:35px; width: 800px; margin-left: 510px; margin-bottom:-15px"> Regime: </h3>
+<h4 class="subtitle" style="position: relative; top:25px; height:15px; width: 1300px; margin-left: 250px;"> {{caloryMessage}} </h4><br>
+<h4 class="subtitle" style="position: relative; top:25px; height:15px; width: 1300px; margin-left: 250px;"> {{BMIMessage}} </h4><br>
+<h4 class="subtitle" style="position: relative; top:25px; height:15px; width: 1300px; margin-left: 250px;"> {{activityMessage}} </h4><br>
+<h4 class="subtitle" style="position: relative; top:25px; height:15px; width: 1300px; margin-left: 250px;"> {{muscleMessage}} </h4><br>
+<h4 class="subtitle" style="position: relative; top:25px; height:15px; width: 1300px; margin-left: 250px;"> {{stressMessage}} </h4><br><br>
+<h3 class="title" style="position: relative; top:25px; height:35px; width: 800px; margin-left: 510px;"> Enter/update your health information: </h3>
+<form method="POST" action="/user/data">
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px;"> {{currentHeight}} </h4>
+        <input type="number" name="Height" placeholder="Height (metres)" step=".01" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 710px;"><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentWeight}} </h4>
+        <input type="number" name="Weight" placeholder="Weight (kg)" step=".1" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 710px;"><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentAge}} </h4>
+        <input type="number" name="Age" placeholder="Age" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 710px;"><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentSex}} </h4>
+        <select name="Sex" id="Sex" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 715px;">
+            <option value="">--What is your sex?--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentActivityLevel}} </h4>
+        <input type="number" name="ActivityLevel" placeholder="Minutes per week spent active" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 710px;"><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentMuscleDev}} </h4>
+        <input type="number" name="MuscleDev" placeholder="Days per week spent training muscle" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 710px;"><br><br>
+        <h4 class="subtitle" style="position: relative; top:25px; height:10px; width: 800px; margin-left: 510px; margin-top:-5px"> {{currentStressLevel}} </h4>
+        <select name="StressLevel" id="StressLevel" style=" position:relative; top:20px; height:35px; width: 400px; margin-left: 715px;">
+            <option value="">--Are you interested in using exercise for mental wellbeing?--</option>
+            <option value="low">No</option>
+            <option value="high">Yes</option>
+        </select><br><br>
+        <button type="submit" style="position: relative; top:25px; height:35px; width: 205px; margin-left: 810px;">Submit</button>
+        <h4 class="subtitle" style="position: relative; top:25px; height:35px; width: 205px; margin-left: 810px;"> {{message}} </h4>
+</form>
+<a href="/"><button style="position:relative; top:20px; height:35px; width: 400px; margin-left: 715px">Exit</button></a>
+<h1> ______________________________________________________________________________________________________________________ </h1>

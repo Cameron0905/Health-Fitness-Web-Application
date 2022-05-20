@@ -1,0 +1,29 @@
+body {
+    background: #EAE7DC;
+    color: #e66051;
+}
+
+.title {
+    font-family: Arial;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Arial;
+    text-align: center;
+    color: #7b7b7c;
+}
+
+.box {
+    border-radius: 15px;
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 420px;
+    margin-left: 740px;
+    background-color: #e980747c;
+    display: flex;
+    z-index: -10;
+    justify-content:center;
+    align-items: center;
+}
