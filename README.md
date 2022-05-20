@@ -1,5 +1,8 @@
 ### Welcome to Your Health Companion
 
+##### On first use:
+- npm install
+
 ##### To start the server, use:
 - User: 'npm run start'
 - Developer: 'npm run dev'
